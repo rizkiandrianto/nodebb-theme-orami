@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-theme-orami",
+  "version": "0.0.1",
+  "description": "This theme for orami",
+  "main": "theme.less",
+  "keywords": [
+
+  ],
+  "license": "MIT"
+}

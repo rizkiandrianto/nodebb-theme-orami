@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-orami",
+    "name": "Orami Forum",
+    "description": "A theme for Orami.co.id/forum",
+    "url": "https://github.com/nodebb/nodebb-theme-quickstart",
+    "screenshot": "screenshot.png"
+}

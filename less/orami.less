@@ -1,0 +1,74 @@
+@import "oss";
+@import "style";
+@import "../static/fonts/fontello/css/fontello";
+
+@import "topic";
+@import "category";
+@import "tags";
+@import "noscript";
+@import "categories";
+@import "header";
+@import "account";
+@import "groups";
+@import "chats";
+@import "notifications";
+@import "search";
+@import "unread";
+@import "users";
+@import "outgoing";
+@import "footer";
+@import "posts_list";
+@import "register";
+@import "flags";
+
+@import "mobile";
+
+@import "helpers";
+@import "keyframes";
+@import "rtl";
+
+@import "modules/nprogress";
+@import "modules/usercard";
+@import "modules/taskbar";
+@import "modules/alerts";
+@import "modules/fab";
+@import "modules/morph";
+@import "modules/composer-default";
+@import "modules/cookie-consent";
+@import "modules/bottom-sheet";
+@import "modules/bxslider/bxslider";
+@import "custom";
+
+@material-primary:         #337ab7;
+@material-success:         #4CAF50;
+@material-info:            #717484;
+@material-warning:         #ff6d00;
+@material-danger:          #F44336;
+
+
+
+
+// 
+// overide recent post slider plugin
+// ===================================
+.recent-cards .recent-card{
+	padding:24px;
+
+	.topic-info{
+		top: 24px;
+		left: 24px;
+		width: auto;
+		padding: 0;
+		right: 24px;
+	}
+	
+	.icon{
+		bottom: 24px;
+		left: 24px;
+	}
+
+	.post-count{
+		bottom: 24px;
+		right: 24px;
+	}
+}

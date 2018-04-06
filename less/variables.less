@@ -1,0 +1,66 @@
+@base-color-1:#ff6c6c;
+
+@base-color-fade:#fc9797;
+@base-color-dark:#e65f5f;
+@orange-base:#f48120;
+@black-base:#221f1f ;
+@blue-base: #91a7d0;
+@blue-link: #0A97EF;
+@yellow-base:#F47A25 ;
+@red-base:#f63838;
+@green-base:#21B594;
+@grey-button:#bbbbbb;
+@grey-button-txt:#73777a;
+@grey-background:#F5F5F1;
+@green-light-base:#66c590;
+@grey-border:#e7e7e7;
+@grey-darker:#3c3d41;
+@grey-title:#4A4A4A;
+@pink-base:#ff6c6c;
+@yellow-star:#f1c114;
+@font-black-base:#58595B;
+@font-light-black:#73777a;
+@base-border:#e4e4e4;
+@color-form-border:#dbdbdb;
+@base-border-2:#a8a8a8;
+@color-input:#c9c9c9;
+@color-label-greyLight:#f5f5f1;
+@fb-btn-color:#334095;
+@google-btn-color:#BD3030;
+@btn-radio:#d8d8d8;
+
+@break-small: 320px;
+@break-medium: 768px;
+@break-large: 1024px;
+
+.responsive(@size, @rules) {
+    & when (@size = handhelds) {
+        @media only screen and (max-width: @break-small) { 
+            @rules(); 
+        }
+    }
+
+    & when (@size = tab) {
+        @media only screen and (min-width: @break-small + 1) and (max-width: @break-medium - 1) { 
+            @rules(); 
+        }
+    }
+
+    & when (@size = tab-to-small) {
+        @media only screen and (max-width: @break-medium - 1) { 
+            @rules(); 
+        }
+    }
+
+    & when (@size = medium-screens) {
+        @media only screen and (min-width: @break-medium + 1) and (max-width: @break-large - 1) { 
+            @rules(); 
+        }
+    }
+
+    & when (@size = wide-screens) {
+        @media only screen and (min-width: @break-large) { 
+            @rules(); 
+        }
+    }
+}
